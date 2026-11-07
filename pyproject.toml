@@ -1,6 +1,6 @@
 [project]
 name = "kaeasy"
-version = "0.5.3"
+version = "0.6.0"
 description = "Georgian writing skills plugin for Hermes agents"
 requires-python = ">=3.11"
 dependencies = []

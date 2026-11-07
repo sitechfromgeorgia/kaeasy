@@ -44,7 +44,7 @@ def test_reported_sentence_says_the_hour_once():
 @pytest.mark.parametrize("text", [
     "UTC-ით 06:00-დან 15:30-მდე ბირჟამ 4.6%-ით ნაკლები გადაიხადა.",
     "ქულები -1-დან +1-მდე იყო, Microsoft-მა და OpenAI-მ 2026 წელს 36%-ით გაზარდეს.",
-    "PayPal-მა და BMW-მ 2 250 მომხმარებელს 1-ელი ნოემბრიდან მისწერეს.",
+    "PayPal-მა და BMW-მ 2 250 მომხმარებელს 1-ლი ნოემბრიდან მისწერეს.",
 ])
 def test_real_narration_comes_out_clean(text):
     assert lint.check_text(speech(text), mode="speech", strict=True) == []
@@ -73,7 +73,7 @@ def test_bmw_uses_the_established_german_letters():
     ("17 მლრდ დოლარი", "ჩვიდმეტი მლრდ დოლარი"),
     # Halves, dates, times before საათი, ranges before a counted noun, phone numbers.
     ("1,5%-ით", "ერთნახევარი პროცენტით"),
-    ("1-ელ იანვარს", "პირველ იანვარს"),
+    ("1-ლ იანვარს", "პირველ იანვარს"),
     ("1 ივნისს", "პირველ ივნისს"),
     ("09:00 საათზე", "ცხრა საათზე"),
     ("18:30 საათზე.", "თვრამეტ საათსა და ოცდაათ წუთზე."),

@@ -95,4 +95,5 @@ review edits.
 
 ## Changelog
 
+- **0.6.0**: Rules from four Georgian grammar books (Peikrishvili, Kvachadze, Chikobava, Khalvashi), in the writer's own words with the source. New references: `case-use`, `adjectives-pronouns`, `verb-forms`, `clauses`, `punctuation`, `particles-adverbs`. New checks: `wrong_form` (strict, exact forms from `data/wrong_forms.json`) and `dated_form` (advice). All 14 book-review points are decided (`docs/NEEDS-REVIEW.md`): the first is written `1-ლი`, whole hundreds `მე-100`, and `ორი ათას` keeps its nominative, all three strict; `ჩვენთაგანი` gets advice; `რომ` may be dropped after wish and necessity; subject-verb-object is a usual order. Speech now reads ordinals with case endings (`1-ლში`, `21-ეზე`).
 - **0.5.3**: Added `negation` lint & auto-fix rule for `ვერცერთი`/`არცერთი` (inherent negation takes positive verb without `არ`/`ვერ`), `negation_split` warning for split spelling, grammar docs, and eval task `news_031`.

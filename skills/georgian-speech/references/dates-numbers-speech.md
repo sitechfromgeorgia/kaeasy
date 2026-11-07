@@ -34,7 +34,7 @@ When reading articles, laws, floors, and ranks:
 
 | Written Form | Spoken Form (`speech_text`) | Note |
 |---|---|---|
-| `100-ე` | `მეასე` | Even hundred |
+| `მე-100` | `მეასე` | Even hundred |
 | `101-ე` | `ას მეერთე` | `1` becomes `მეერთე` in compounds |
 | `102-ე` | `ას მეორე` | Preceding hundred remains stem `ას` |
 | `110-ე` | `ას მეათე` | `10` becomes `მეათე` |
@@ -42,14 +42,14 @@ When reading articles, laws, floors, and ranks:
 | `150-ე` | `ას ორმოცდამეათე` | `50` becomes `ორმოცდამეათე` |
 | `180-ე მუხლი` | `ას მეოთხმოცე მუხლი` | Matsne verified: `180-ე (ას მეოთხმოცე)` |
 | `180-ე მუხლს` | `ას მეოთხმოცე მუხლს` | `-ე` does not truncate before noun |
-| `200-ე` | `მეორასე` | Even two hundred |
+| `მე-200` | `მეორასე` | Even two hundred |
 | `201-ე` | `ორას მეერთე` | `ორას` + `მეერთე` |
-| `300-ე` | `მესამასე` | Even three hundred |
+| `მე-300` | `მესამასე` | Even three hundred |
 | `353-ე მუხლი` | `სამას ორმოცდამეცამეტე მუხლი` | `სამას` + `ორმოცდამეცამეტე` |
 | `353¹-ე მუხლი` | `სამას ორმოცდამეცამეტე პრიმა მუხლი` | Prime article read with `პრიმა` |
-| `1000-ე` | `მეათასე` | Even thousand |
+| `მე-1000` | `მეათასე` | Even thousand |
 | `1001-ე` | `ათას მეერთე` | `ათას` + `მეერთე` |
-| `2000-ე` | `მეორიათასე` | Even two thousand |
+| `მე-2000` | `მეორიათასე` | Even two thousand |
 | `2026-ე` | `ორი ათას ოცდამეექვსე` | `ორი ათას` + `ოცდამეექვსე` |
 
 ---

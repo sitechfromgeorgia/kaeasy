@@ -46,3 +46,32 @@ The -ი sound row above said `-თი` for the instrumental (`OpenAI-თი`). 
 | `speech.py`, `citations.md` | `144³` read `პრიმა სამი`: the law gives `პრიმ` plus a digit, usage in court was not checked | to check |
 | `courts-institutions.md` | Bar association, appeal courts and Gurjaani court details: the sources could not be opened | not verified |
 
+
+## Book review: for Louie (2026-11-07)
+
+The rules added in v0.6.0 come from four books. Where a book disagreed with an existing Kaeasy rule, the rule stayed until Louie decided. All 14 rows are now decided (2026-11-07). Louie decided the four numeral rows and the `ჩვენთაგანი` row, and said that otherwise the books show what is correct, so the other rows follow the book.
+
+| Where | Kaeasy said | The book says | Source | Decision (2026-11-07) |
+|---|---|---|---|---|
+| `syntax.md` §7 | Negative concord is primary | Doubling the negative is optional | Kvachadze §12 | Book: both correct, doubling the common form; lint flags neither |
+| `syntax.md` §1 | `ნეტავ`, `ნეტა` | `ნეტავი`, `ნეტა` | Kvachadze §20 | Book: `ნეტავ`, `ნეტავი`, `ნეტა` all correct |
+| `agreement.md` | `ყველა` may take a plural verb for "all of them" | Singular verb only | Kvachadze §55 | Book: `ყველა მოვიდა`; plural only with `ყველანი` |
+| `syntax.md` §4 | Adjectives never take `-ებ-` | A following adjective may, as in poetry | Kvachadze §105 | Book: added as the postposed exception |
+| `syntax.md` §5 | Subject-verb-object is an unresolved calque | One of three usual orders | Kvachadze §133-134 | Book: SVO is ✅; SOV stays the most neutral |
+| `syntax.md` §1 | `თუ` + aorist is a calque | Normal when the aorist has a future meaning | Kvachadze §182 | Book: future `თუ` + aorist is ✅; the unreal-past ❌ stays |
+| `syntax.md` §1 | Wish and necessity clauses need `რომ` | `რომ` is often dropped | Kvachadze §186 | Book: `რომ` optional |
+| `syntax.md` §2 | Relayed `-თქო` uses the third-person optative | Its two examples use the second person | Kvachadze §194 | Book: second person added, third person kept |
+| `agreement.md` | `ორ ათას ადამიანს` | `ორი ათას კაცს` | Peikrishvili §59 | Louie: `ორი ათას`; `ორ ათას` is a strict lint error |
+| `dates-numbers.md` | `ერთნახევარი`, `ორნახევარი` | `ოთხ-ნახევარი`, `ტონა-ნახევარი` | Peikrishvili §56, §59 | Louie: numbers one word (`ოთხნახევარი`), units hyphenated (`კილო-ნახევარი`) |
+| `dates-numbers.md` | `ას მეერთე`, spaced | `ასმეერთე`, one word | Peikrishvili §59 | Louie: spaced, as now |
+| `dates-numbers.md`, `lint.py` | `1-ელი`, `100-ე` | `1-ლი`, `მე-100` | Peikrishvili §59 | Louie: `1-ლი`; `1-ელი` and `100-ე` are strict lint errors |
+| not in Kaeasy | | `ჩვენთაგანი`, `თქვენთაგანი` are wrong, though common in print | Peikrishvili §41 | Louie: advice in `ka_lint` (`dated_form`), not strict |
+| `noun-stems.md` §2 | Syncope before ი after რ, ლ, მ, ნ and a rare დ | Also rarely before other consonants: `ბეჭედი`, `ხოხობი`, `ნიჩაბი` | Peikrishvili §25 | Book: added |
+
+Still open from the book: Peikrishvili writes `მე-` first when an ordinal's parts are joined without `და`, which could mean `მე-101` rather than `101-ე`. The book gives no example above 100, so Kaeasy keeps `101-ე`, `180-ე` as *matsne.gov.ge* writes them.
+
+Applied, because they are errors of fact:
+- `noun-stems.md`: the `-ა` of a stem drops before plural `-ებ-`; the file said it stays. The example forms were already right.
+- `agreement.md`, `syntax.md`: no comma before `რომ` when it sits inside its own clause (`შენ რომ მოხვიდე, გავიხარებ`).
+
+The rule cards that were left out because the modern norm is unclear are kept outside the repo, in `_rules/` next to the books.

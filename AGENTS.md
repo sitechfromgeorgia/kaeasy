@@ -39,6 +39,9 @@ uv run python evals/score.py --inspect news_001          # inspect an eval task
 3. Mechanically detectable and zero-noise: add it to `lint.py` with tests for true positives and negatives.
 4. Run the tests.
 
+A rule taken from a book is written in your own words with its source, such as `(Peikrishvili §32)`. Never paste
+book text: the books are in copyright.
+
 ## Change flow
 
 Branch → PR → Louie merges. Code, comments and commits in English.

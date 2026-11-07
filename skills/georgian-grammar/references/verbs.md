@@ -34,6 +34,14 @@ The future and aorist need a preverb; the present usually has none:
 
 ❌ `კომპანიამ ახალი ოფისი ხსნა` (no preverb in aorist) → ✅ `კომპანიამ ახალი ოფისი გახსნა`.
 
+Exceptions to the preverb pattern (details in `verb-forms.md`):
+
+- A present form can also carry future or timeless meaning. The formal line between present and future is not always firm, and forms such as `ჭამს` and `ასწავლის` can be read as either. In context a present form can point to the future, as with `ვასწავლი` meaning "I will teach"; the book calls this an indirect meaning of the present. Some forms carry no time at all (timeless forms): those stating permanent phenomena, or an action typical of the thing named, such as `ანათებს`, `ცურავს`. Words such as `დღეს`, `გუშინ` and `ხვალ` can express time, but that is not morphological tense. The number of tenses is not agreed: A. Shanidze counts three, Khundadze counted 11, Marr 8 and Chikobava 6. (Peikrishvili §85-§86)
+- A preverb does not always turn a present into a future: `ქრის`, `მიქრის`, `დაქრის` are all present, and `წერდა` and `დაწერდა` are both past. (Peikrishvili §99, §100)
+- The aorist does not always need a preverb. `თქვა`, `ნახა`, `ჰკითხა`, `სთხოვა`, `ბრძანა`, `უთხრა` have no preverb but are understood as perfective, because they are in series II (a remnant of the Old Georgian system). Most verbs are different: without a preverb their aorist is imperfective (`ვწერე`, `ვხატე`). (Peikrishvili §99)
+- Some verbs form the future without a preverb: `ვნახავ`, `ვიყიდი`, `ვიშოვი`, `ვილოცავ` are future; the present is then `ვყიდულობ`, `ვშოულობ`, `ვპოულობ`, `ვლოცულობ`. The book does not give a -ულობ present for every such verb. (Peikrishvili §155)
+- Write the literary vowel of the preverb: ✅ `წავიდა`, ❌ `წევიდა`; ✅ `შეიყრებიან`, ❌ `შაიყრებიან`. (Peikrishvili §96, point 1)
+
 ## 3. Transitive vs intransitive pairs (decides ergative or nominative)
 
 | Transitive: ergative subject | Intransitive: nominative subject |
@@ -70,6 +78,11 @@ neutral form where Georgian needs the objective one:
 - `შეიძინა` (acquired for itself) vs `შეუძინა` (acquired for someone); `იყიდა` vs `უყიდა` (bought for someone):
   ✅ `კომპანიამ სტარტაპი შეიძინა`.
 
+Refinements from the book (full tests in `verb-forms.md`):
+
+- The objective marker is `უ-` only when the indirect object (the recipient) is 3rd person. With a 1st or 2nd person recipient the marker is `ი-`, the same as the subjective version: `მიწერს` (for me), `გიწერს` (for you), `უწერს` (for him). (Peikrishvili §134-135)
+- In series III the `ი-` and `უ-` of a transitive verb carry no "for someone" meaning: `აკეთებს`, `იკეთებს` and `უკეთებს` all give the one perfect `გაუკეთებია`. So `დაუწერია` and `აუშენებია` do not imply a beneficiary. (Peikrishvili §137, §161)
+
 ## 6. Verbs that always take a dative subject
 
 `აქვს` (has), `ჰყავს` (has, animate), `სჭირდება` (needs), `უნდა` (wants), `უყვარს` (loves), `მოსწონს`
@@ -79,8 +92,15 @@ neutral form where Georgian needs the objective one:
 ✅ `კომპანიას 300 თანამშრომელი ჰყავს` ❌ `კომპანიას 300 თანამშრომელი აქვს` (people → ჰყავს)
 ✅ `ედოს უნდა, რომ ...` ❌ `ედო უნდა, რომ ...`
 
+In inversion the real subject is shown by the object's person sign and the real object by the subject's. The book says modern Georgian has mainly three types of inverted form: transitive verbs in series III; verbs of feeling and perception (the `უყვარს`, `მიჭირს` type); and dynamic passive-voice verbs with a passive subject that lean toward inversion (`ეხატება`, `ედგომება`, `ეჩვენება`), whose inversion is unstable, since the same verb can also build a direct construction. All Georgian scholars accept the first type. The `უყვარს` type is disputed: A. Shanidze and L. Kvachadze say it is not inverted; Chikobava, Topuria and Jorbenadze say it is. (Peikrishvili §83-§84)
+
 ## 7. Register in direct address
 
 - Social and video copy: `შენ` with matching verb forms (`გამოიწერე`, `რას ფიქრობ?`).
 - UI and formal copy: `თქვენ` (`გამოიწერეთ`, `შეიყვანეთ`). Never mix both in one text.
 - Present for an opinion question: ✅ `შენ რას ფიქრობ?` ❌ `შენ რას იფიქრებ?` (future = "what will you think").
+- Some verbs have a polite counterpart for reserved, courteous speech: `ხარ` → `ბრძანდები`, `მოდი` → `მობრძანდი`, `დაჯექი` → `დაბრძანდი`, `თქვი` → `ბრძანე`, `ჭამე` → `მიირთვი`. (Peikrishvili §156)
+
+## 8. Conjunctive
+
+- The conjunctive form is often, not always, used in a dependent clause, and in this use the conjunctions `რომ` and `რათა` are present with it or are understood. The rule runs from the conjunctive to the clause, not the reverse: it does not say that every clause with `რომ` takes the conjunctive. The conjunctive screeves can express all three times, but the mood is not as rich in forms as the indicative. The book's conjunctive forms, for now, future and past: `წერდეს`, `დაწეროს`, `დაეწეროს`. (Peikrishvili §88)

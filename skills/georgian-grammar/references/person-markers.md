@@ -152,3 +152,21 @@ Appears:
    - ❌ `გაცნობთ` / `გაცნობ` → ✅ `გაცნობებთ` / `გაგაცნობთ`
    - ❌ `შეგატყობინებ` → ✅ `შეგატყობინებთ`
    - ❌ `მოგწერა` (referring to a message to the client) → ✅ `მოგწერათ`
+
+---
+
+## 6. Book rules: subject sign ვ-
+
+- Write the 1st-person subject sign ვ- even where it is not heard: it is not pronounced before the vowels უ and ო or before the consonant ვ, but it has to be written all the same. ✅ `ვუთხარი`, `ვოცნებობ`, `ვვარჯიშობ` (when the speaker is "I"). (Peikrishvili §79, point 1)
+- In მოვედი and მოვალ the regular pattern would give a doubled ვ (მოვვედი, მოვვალ), but the 2nd person kept the Old Georgian marker ხ (მოხვედი, მოხვალ), so 1st and 2nd person are distinct anyway and the language easily lost the 1st-person ვ- prefix. ✅ `მოვედი`, `მოვალ`, `მოხვედი`, `მოხვალ`. The book records rare doubled forms in the written language (მოვვედი, შევვლე), for example in ვეფხისტყაოსანი. (Peikrishvili §77)
+- The 1st person can be marked twice: once by the ვ- person sign and once by the auxiliary verb (the final -ვარ). These are regular forms and must not be "corrected": ✅ `ვშობილვარ`, `გავუგზავნივარ`, `ვზივარ`, `მივრბივარ`, `ვწერივარ`. This is not the "double prefix marking" of section 5, which is about two prefixes. (Peikrishvili §77)
+
+## 7. Book rules: object prefixes that must not appear
+
+- A 3rd-person direct object has no marker on the verb: ✅ `თქვა`, `გადაწყვიტა`, not `სთქვა`, `გადასწყვიტა`. The book calls such forms grammatically mistaken, and says they seem to come partly from analogy with the 3rd-person indirect object and partly from stylistic expressiveness. (Peikrishvili §79, point 7)
+- Some one-person verbs are found with an object prefix on top of the subject marking; the book calls this incorrect: ✅ `შედგა`, `ჩანს`, `დუმს`, `ქუხს`, `ქრის`, not `შესდგა`, `სჩანს`, `სდუმს`, `ჰქუხს`, `ჰქრის`. It applies to the verbs the book lists and others like them, not to every one-person verb: verbs such as მძინავს and გღვიძავს are now one-person yet keep their two person signs. (Peikrishvili §79, point 2; §80 for the limit)
+- A few verbs have only one person pattern (წყობა), subject or object: ვიცი only the subject pattern, მძინავს only the object pattern. In the object-only group the subject is always 3rd person (A. Shanidze), not the person the prefix shows. ✅ `მძინავს`, `გძინავს`, `სძინავს`, not `ვძინავარ`; ✅ `ვიცი`, `იცი`, `იცის`, not `მიცის`, `გიცის`. (Peikrishvili §80)
+
+## 8. Book rules: aorist 3rd person plural
+
+- In the aorist 3rd person plural, transitive verbs and the so-called defective verbs (no direct object, but a case-changing subject, as in იცხოვრა მან) end in -ეს, not -ენ. Intransitive verbs end in -ნენ, not -ენ. ✅ `გააკეთეს`, `იცხოვრეს`, `წავიდნენ`, not `გააკეთენ`, `იცხოვრენ`, `წავიდენ`. (Peikrishvili §115, points 2-3; defective verbs are described in §114)

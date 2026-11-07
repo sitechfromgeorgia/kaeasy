@@ -17,7 +17,9 @@ A systematic protocol for translating English and Russian into natural, idiomati
 
 English and Russian are predominantly SVO (Subject-Verb-Object) and heavily rely on passive participle chains. Georgian is naturally SOV-leaning (Subject-Object-Verb), especially in the aorist (past indicative):
 
-1. **Move the finite verb toward the end:**
+1. **Move the finite verb toward the end:** subject-verb-object on its own is a usual Georgian order too
+   (Kvachadze §133-134). What reads as translated is the English tail: time and place phrases after the object.
+   In Georgian they usually stand before the verb (Kvachadze §132).
    - ❌ `კომპანიამ გამოაცხადა გუშინ ახალი გეგმა თანამშრომლებისთვის.` (mirroring English SVO)
    - ✅ `კომპანიამ გუშინ თანამშრომლებს ახალი გეგმა გააცნო.` (SOV structure)
 2. **Convert passive into active voice:**

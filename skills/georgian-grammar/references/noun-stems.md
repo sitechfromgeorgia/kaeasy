@@ -21,15 +21,18 @@ and in the case of syncope, critically before the plural suffix **`-ებ-`**.
   - `მოწაფე` → Gen: `მოწაფის`, Inst: `მოწაფით`, Adv: `მოწაფედ`
   - `დღე` → Gen: `დღის`, Inst: `დღით`, Adv: `დღედ`
 - **Plural Formation**:
-  - Regular **-ა** stems keep their **-ა-** before the plural suffix `-ებ-`:
-    `კომპანიები`, `მთავრობები`, `პროგრამები`, `სისტემები`.
+  - Regular **-ა** stems drop their **-ა** before the plural suffix `-ებ-`:
+    `ზღვა` → `ზღვები`, `კომპანია` → `კომპანიები`, `მთავრობები`, `პროგრამები`, `სისტემები` (Peikrishvili §27).
   - Regular **-ე** stems keep their **-ე-** before `-ებ-`:
-    `მოწაფეები`, `დღეები`, `მზეები`.
+    `ხე` → `ხეები`, `მოწაფეები`, `დღეები`, `მზეები`.
+  - Only a noun whose stem really ends in **-ე** gets the double ე. Do not copy the pattern by analogy in `წელი` and `კვირა`, whose stems do not end in -ე: `ხეები`, `დღეები`, `წლები`, `კვირები` (❌ `წლეები`, `კვირეები`). (Peikrishvili §32.5)
+- **Adverbial -დ**: the sign of the adverbial is only the consonant `-დ`, and truncation comes only from endings that begin with a vowel, so `-დ` goes on the whole stem: `ზღვად`, `ხედ`. The double-change nouns (section 3) differ: their adverbial reuses the contracted, truncated stem of the genitive and instrumental by analogy, and because that stem ends in a consonant the sign is `-ად`: `ფანჯრად`, `მოყვრად` (❌ `მოყვარედ`). The page credits this explanation to G. Ialamidze. (Peikrishvili §27, §28)
 - **Non-Truncating Vowels (-ო and -უ)**:
   - Stems ending in **-ო** and **-უ** do **not** truncate in modern literary Georgian:
     - Genitive ending is **`-ს`**: `სააგენტოს`, `ბიუროს`, `მეტროს`, `წყაროს`, `ფოტოს`, `ინტერვიუს`
     - Instrumental ending is **`-თი`**: `სააგენტოთი`, `ბიუროთი`, `მეტროთი`, `წყაროთი`
     - Plural suffix attaches directly: `სააგენტოები`, `ბიუროები`, `მეტროები`, `წყაროები`
+  - Two exceptions among -ო nouns: `დრო` takes the full endings `-ის` / `-ით` (`დროის`), and `ღვინო` truncates in the singular (`-ის`, `-ით`: `ღვინის`) but keeps -ო in the plural (`ღვინოები`). (Peikrishvili §29, §33)
 
 ---
 
@@ -45,9 +48,19 @@ when an inflectional suffix starting with a vowel (`-ის`, `-ით`, `-ა�
   - Elision of **-ო-** (pure drop): `ფოთოლი` → `ფოთლის`, `ფოთლით`, `ფოთლები`
   - Alternation of **-ო-** with **-ვ-**: `მინდორი` → `მინდვრის`, `მინდვრით`, `მინდვრები`; `ნიგოზი` → `ნიგვზის`
   - Elision before **-დ-**: `ბეჭედი` → `ბეჭდის`, `ბეჭდით`, `ბეჭდები`
+  - Rarely before other consonants too, such as **ბ**: `ხოხობი` → `ხოხბის`, `ნიჩაბი` → `ნიჩბის`, and `ნაბადი` →
+    `ნაბდის` (Peikrishvili §25)
+
+### Which forms drop the stem vowel (Peikrishvili §25)
+- A shortening noun loses a stem vowel in the singular genitive, instrumental and adverbial and throughout the `-ებ-` plural, that is, before `-ის`, `-ით`, `-ად` and `-ებ`. The stem stays whole in the nominative, ergative, dative and vocative and in the `-ნ`/`-თ` plural: `ხმალი`, `ხმალს` · `ხმლის` · `ხმლები`.
+- Shortening nouns mainly end in -ალ, -ელ, -ოლ, -არ, -ერ, -ორ, -ან, -ენ, -ონ, -ამ, -ემ or -ავ. The list does not work in reverse: a noun with one of these endings need not shorten.
+- Only ა, ე and ო are affected; Shanidze is cited for ი and უ staying. ა and ე vanish, while ო usually becomes ვ, and that ვ is lost too when it would sit directly beside ბ, ფ, პ or მ: `მინდორი` → `მინდვრის`, `ობოლი` → `ობლის`, `საპონი` → `საპნის`, `ბეჭედი` → `ბეჭდის`.
+- Literary Georgian has some words both ways: `ქართველი`, `ყვარელი`, `ფრინველი`, `ლიმონი`.
+- A noun can end in one of the listed endings and still keep its stem, as `ქალი` and `ცალი` do: `ქალისა`, `ცალისა`. The same noun may also shorten in one use and not in another: when `თვალი` or `წელი` names a body part, the stem is kept, and in other senses it shortens: `თვალის ტკივილი`, `წელის ტკივილი`, `ბეჭდის თვლის გაკეთება`, `წლის დროები`.
+- `კარი`, `დარი`, `ღვარი` and `ბერი` are the only words the book names here: taken separately they keep their stem vowel, and when one of them is part of a compound word it shortens: `კარის გაღება`, `დარის დადგომა`, `ბერის აღსარება`, `ცისკრის ზარები`, `ავდრის მოლოდინი`, `დედაბრის მოთქმა`.
 
 ### Critical Distinction: Syncope in the Plural
-Unlike truncation (which does not affect plural `-ებ-`), **syncope strictly carries into the plural**:
+Like the `-ა` that drops before `-ებ-` (the `-ე` stays), **syncope carries into the plural**:
 - ✅ `მკვლევრები` (❌ `მკვლევარები`)
 - ✅ `მომხმარებლები` (❌ `მომხმარებელები`)
 - ✅ `მასწავლებლები` (❌ `მასწავლებელები`)
@@ -63,6 +76,17 @@ A select group of high-frequency native nouns undergo **both** changes: they dro
 - `ფანჯარა` → Gen: `ფანჯრის`, Inst: `ფანჯრით`, Plural: `ფანჯრები`
 - `ქარხანა` → Gen: `ქარხნის`, Inst: `ქარხნით`, Plural: `ქარხნები`
 - `ბეგარა` → Gen: `ბეგრის`, Inst: `ბეგრით`, Plural: `ბეგრები`
+
+---
+
+## 3A. A few irregular stems (Peikrishvili §33)
+
+- `ამბავი` loses its ვ along with the vowel when it contracts: genitive `ამბის`.
+- `ხუცესი` likewise loses its ს along with the vowel: genitive `ხუცის` (an explanation credited to V. Topuria).
+- `ღმერთი` gives `ღვთის` in the genitive.
+- `ხბო` has two plurals, `ხბორები` and `ხბოები`; the page calls `ხბოები` the more correct and also the more widespread one today.
+- The list also names `ქალამანი` and `ლურსმანი`, but a footnote places their reduced forms `ქალმის` and `ლურსმის` in the dialects.
+- `დრო` and `ღვინო` are on the list too (see section 1).
 
 ---
 

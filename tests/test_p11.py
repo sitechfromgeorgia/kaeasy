@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 
+import pytest
 from kaeasy import fix, lint, speech
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -20,9 +21,18 @@ def test_dates_speech():
     assert speech.speech("22-ე ნოემბერს") == "ოცდაორ ნოემბერს"
     assert speech.speech("22 ნოემბერი") == "ოცდაორი ნოემბერი"
     assert speech.speech("1 ნოემბერს") == "პირველ ნოემბერს"
-    assert speech.speech("1-ელი ნოემბერი") == "პირველი ნოემბერი"
-    assert speech.speech("1-ელ ნოემბერს") == "პირველ ნოემბერს"
+    assert speech.speech("1-ლი ნოემბერი") == "პირველი ნოემბერი"
+    assert speech.speech("1-ლ ნოემბერს") == "პირველ ნოემბერს"
+    assert speech.speech("1-ელი ნოემბერი") == "პირველი ნოემბერი"  # the old spelling is still read
     assert speech.speech("10-14 ოქტომბერს") == "ათიდან თოთხმეტ ოქტომბრამდე"
+
+
+@pytest.mark.parametrize("written,spoken", [
+    ("1-ლში", "პირველში"), ("1-ლმა", "პირველმა"), ("1-ლის", "პირველის"),
+    ("21-ეზე", "ოცდამეერთეზე"), ("მე-5-ში", "მეხუთეში"), ("მე-5-ის", "მეხუთის"),
+])
+def test_ordinal_with_case_ending_speech(written, spoken):
+    assert speech.speech(written) == spoken
 
 
 def test_prime_articles_speech():
@@ -60,7 +70,7 @@ def test_lint_ordinal_date():
     good_examples = [
         "შეხვედრა 22 ნოემბერს გაიმართება.",
         "შეხვედრა ოცდაორ ნოემბერს გაიმართება.",
-        "1-ელი ნოემბერი უქმე დღეა.",
+        "1-ლი ნოემბერი უქმე დღეა.",
         "პირველ ნოემბერს შევიკრიბებით.",
         "ზედიზედ მეორე მარტს აღინიშნა რეკორდი.",
         "ეს არის მე-5 მუხლი.",
@@ -96,9 +106,9 @@ def test_fix_ordinal_date():
     assert fixed == "შეხვედრა 22 ნოემბერს გაიმართება."
     assert any("ordinal_date" in c for c in changes)
 
-    # 1-ელი remains untouched
-    fixed_first, changes_first = fix.fix_text("1-ელი ნოემბერი ოფიციალური დღეა.")
-    assert fixed_first == "1-ელი ნოემბერი ოფიციალური დღეა."
+    # 1-ლი remains untouched
+    fixed_first, changes_first = fix.fix_text("1-ლი ნოემბერი ოფიციალური დღეა.")
+    assert fixed_first == "1-ლი ნოემბერი ოფიციალური დღეა."
     assert not changes_first
 
 

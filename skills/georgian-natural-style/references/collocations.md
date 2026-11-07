@@ -125,3 +125,46 @@ When drafting or editing, align abstract nouns with their natural verbal domain:
 | 78 | წერტილის დასმა | წერტილის გაკეთება | "put an end to / conclude" | Finality: `მოლაპარაკებებმა დავას წერტილი დაუსვა`. |
 | 79 | სათავის დადება | დასაწყისის გაკეთება | "lay the beginning / initiate" | Historical foundation: `აღმოჩენამ ახალ მიმართულებას დაუდო სათავე`. |
 | 80 | საფუძვლის ჩაყრა | საფუძვლის გაკეთება | "lay the foundation" | Building foundations: `ლიდერებმა ხანგრძლივ მშვიდობას ჩაუყარეს საფუძველი`. |
+
+---
+
+## 3. Book rules: word choice and connectors
+
+Rules from Chikobava (1946) reflect the literary norm of its time.
+
+### Check the whole phrase before swapping a near-synonym
+No two words mean exactly the same; true synonyms are a fiction. A difference always remains: each word starts from a different aspect of the thing, or the speaker's attitude differs, or one word is wider in range. The evidence is that such words cannot stand in for each other beside other words, so test the whole phrase before substituting.
+- ✅ `ძლიერი წინააღმდეგობა` · `მშვენიერი გამოკვლევა`; the book rejects ❌ `ღონიერი წინააღმდეგობა`, ❌ `კოხტა გამოკვლევა` and ❌ `ლამაზი გამოკვლევა`
+- Attitude: `მეუღლე` carries a respect that `ცოლი` lacks. Range: the book calls `მოსწავლე` wider than `მოწაფე` (its sample phrase with a university is dated, since today that person is a `სტუდენტი`).
+
+(Chikobava §65)
+
+### Steps go with გადადგმა, not განხორციელება
+An aim can be carried out (`განხორციელება`), while of steps one says `გადადგა`. The book faults a board that carries out a series of steps. This is one example of the wider point for non-literary prose: the words of an expression must suit each other in meaning.
+- ✅ `ნაბიჯი გადადგა` · `მიზანი განახორციელა` · ❌ `გამგეობამ განახორციელა მთელი რიგი ნაბიჯები`
+
+(Chikobava §73)
+
+### ჩამორჩენილობა takes თავს ვერ დააღწევს
+`თავს ვერ გაართმევს` is correct Georgian in itself but does not suit the noun `ჩამორჩენილობა`; the book says the sentence should use `თავს ვერ დააღწევს`. The verdict covers this pairing only and is no general ban. The book does not explain the difference; in standard Georgian the first means coping with something and the second means getting free of it.
+- ✅ `ჩამორჩენილობას თავს ვერ დააღწევს` · ❌ `წარმოება თავს ვერ გაართმევს ჩამორჩენილობას` (the book's faulty sentence)
+
+(Chikobava §73)
+
+### ან for alternatives, not ანუ
+`ანუ` marks an equivalent ("that is") and cannot link two different numbers; for either-or, use `ან`. A separate point from the same passage: `და` cannot join phrases whose meanings have no connection with each other. A footnote limits this: in fiction such a misplaced `და` can give a deliberate stylistic effect. The section is about non-literary prose, and the book also faults a misplaced `აგრეთვე` here.
+- ✅ `შვიდი ან ათი თემი` · ❌ `შვიდი ანუ ათი თემი`
+
+(Chikobava §73, with footnote 1)
+
+### Strong words used habitually for ordinary things go weak
+People say exaggerating words about ordinary, everyday events to make a bigger effect, but the real event does not live up to what was promised, so the higher the expectation, the smaller the impression. If this becomes habitual, the word is blunted and ends up describing something quite ordinary. This is a description, not a prescription; the practical advice that follows is to save such words for cases that fit them.
+- Words the book names, when said of everyday events: `უმაგალითოა` · `საშინელებაა` · `წარმოუდგენელია`
+
+(Chikobava §60)
+
+### Quality nouns from adjectives: სი-...-ე or -ება
+To name a quality, Georgian uses the frame `სი-...-ე` (or `სი-...-ო`) or the suffix `-ება` (`-ობა`), and the choice depends on the kind of base. In the book's samples `სი-` goes on plain adjectives, adjectives in `-იერი` take `-ება`, and negated adjectives (`დაუდევარი`, `უყურადღებო`, `უფულო`) take `-ობა`. The stem changes in some pairs, usually by losing a vowel. The same suffix does not always produce a quality noun: `ვაჟკაცობა` names a quality but `დღეობა`, `სახლობა` and `ოდენობა` do not.
+- ✅ `ლამაზი, სილამაზე` · `თბილი, სითბო` · `წითელი, სიწითლე` · `ბედნიერი, ბედნიერება` · `დაუდევარი, დაუდევრობა` · `უფულო, უფულობა`
+
+(Chikobava §66)

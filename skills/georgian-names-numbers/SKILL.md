@@ -44,7 +44,7 @@ the rules and table in `references/latin-names.md` and `references/brands.md`.
 ## Dates
 
 `2026 წლის 15 ოქტომბერს` · `15 ოქტომბერს` · `2026 წელს` · `09:00 საათზე`. ❌ `October 15`, `15.10.2026 წ.` in prose.
-Day of the month is a cardinal, never an ordinal: `22 ნოემბერი`, `22 ნოემბერს` (❌ `22-ე`, `ოცდამეორე`). Only the first day is an ordinal: `1-ელი ნოემბერი`, `პირველ ნოემბერს`. Details: `references/dates-numbers.md`.
+Day of the month is a cardinal, never an ordinal: `22 ნოემბერი`, `22 ნოემბერს` (❌ `22-ე`, `ოცდამეორე`). Only the first day is an ordinal: `1-ლი ნოემბერი`, `პირველ ნოემბერს`. Details: `references/dates-numbers.md`.
 
 ## Punctuation
 

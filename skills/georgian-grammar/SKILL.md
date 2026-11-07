@@ -70,4 +70,10 @@ Vowel-stem adjectives (`მწვანე`, `ფართო`, `ახლო`) 
 - `references/person-markers.md`: polypersonal agreement, prefixes მ-/გ-/გვ-, plural -თ, and 3rd person ჰ-/ს-/∅.
 - `references/agreement.md`: plural subjects, collective nouns, "ის / ისინი", relative `რომელიც`.
 - `references/syntax.md`: conditionals, subjunctive, reported speech, active vs passive, word order, commas, negation.
+- `references/case-use.md`: which case or postposition each object and adverbial takes.
+- `references/adjectives-pronouns.md`: degrees, declining a modifier with its noun, pronoun and numeral forms.
+- `references/verb-forms.md`: preverbs, voice, version, contact, thematic markers, verbal noun, participles.
+- `references/clauses.md`: compound and subordinate clauses, conjunctions, reported speech.
+- `references/punctuation.md`: each mark, set-off phrases, direct address, parenthetical words.
+- `references/particles-adverbs.md`: adverbs and their spelling, postpositions, conjunctions, particles.
 - `examples/grammar-fixes.md`: 200+ wrong → right sentences from news, tech and social copy. Read before writing.

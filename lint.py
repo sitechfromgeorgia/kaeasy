@@ -110,9 +110,9 @@ LATIN_OTHER = {("consonant", "თი"): "ით", ("vowel", "ის"): "ს", ("
 STRICT = {"translit", "ending_hyphen", "quotes", "decimal", "ellipsis", "percent", "number_plural",
           "cyrillic", "space_punct", "double_space", "title_period", "dash", "latin_in_speech", "russian_letter",
           "postposition_dative", "latin_ergative", "numeral_compound", "legal_citation", "date_ordinal",
-          "wrong_name", "negation"}
+          "wrong_name", "negation", "wrong_form"}
 
-COMPANIES_PATH = Path(__file__).resolve().parent / "data" / "glossary" / "georgia-companies.json"
+COMPANIES_PATH =Path(__file__).resolve().parent / "data" / "glossary" / "georgia-companies.json"
 # `wrong` lists spellings that are never right (ტიბისი, ტელასი). `avoid` is advice for the writer and stays out of
 # the strict gate: it holds shortened forms and bare surnames that are correct when they name something else.
 COMPANY_WRONG: dict[str, str] = {}
@@ -134,13 +134,30 @@ def _name_pattern(wrong: str) -> str:
 COMPANY_WRONG_PATTERNS = [(re.compile(_name_pattern(w)), pref) for w, pref in
                           sorted(COMPANY_WRONG.items(), key=lambda x: len(x[0]), reverse=True)]
 
+FORMS_PATH = Path(__file__).resolve().parent / "data" / "wrong_forms.json"
+_FORMS = json.loads(FORMS_PATH.read_text(encoding="utf-8")) if FORMS_PATH.exists() else {}
+WRONG_FORMS: dict[str, str] = _FORMS.get("error", {})  # never correct: strict
+DATED_FORMS: dict[str, str] = _FORMS.get("warn", {})  # old or literary: advice only
+
+
+def _forms_re(table: dict[str, str]) -> re.Pattern:
+    """Whole words only. A space in an entry matches any run of spaces."""
+    alts = sorted(table, key=len, reverse=True)
+    forms = "|".join(re.escape(w).replace(r"\ ", r"\s+") for w in alts)
+    return re.compile(rf"(?<![ა-ჰA-Za-z0-9-])(?:{forms})(?![ა-ჰA-Za-z0-9])")
+
+
+WRONG_FORMS_RE = _forms_re(WRONG_FORMS)
+DATED_FORMS_RE = _forms_re(DATED_FORMS)
+QUOTED = re.compile(r"„[^“\n]*“")
+
 # A month in any case form, the same forms as speech.MONTHS (a test keeps them equal). Whole forms, not prefixes:
 # „მეორე მარტივი გზა“ and „მეორე მაისური“ are not dates.
 MONTH_FORM = (r"(?:(?:იანვარ|თებერვალ|სექტემბერ|ოქტომბერ|ნოემბერ|დეკემბერ)(?:ი|ია|ს|ში|ზე)"
               r"|(?:იანვრ|თებერვლ|სექტემბრ|ოქტომბრ|ნოემბრ|დეკემბრ)(?:ის|ით|ად|ამდე|იდან|ისთვის)"
               r"|(?:მარტ|აპრილ|მაის|ივნის|ივლის)(?:ი|ია|ს|ის|ით|ად|ში|ზე|ამდე|იდან|ისთვის)"
               r"|აგვისტო(?:ა|ს|თი|დ|ში|ზე|მდე|დან|სთვის)?)")
-MONTH_DAY = r"(?:[2-9]|[12]\d|3[01])"  # day 1 is ordinal („1-ელი ნოემბერი“), a year is not a day
+MONTH_DAY = r"(?:[2-9]|[12]\d|3[01])"  # day 1 is ordinal („1-ლი ნოემბერი“), a year is not a day
 
 ORDINAL_DATE_RE = re.compile(
     r"(?<![ა-ჰ0-9])(?<!ზედიზედ\s)"
@@ -389,6 +406,21 @@ def check_text(text: str, mode: str = "article", title: str | None = None,
             if re.match(r"^\s+(?:და|ან|თუ)\s+(?:(?:არც|ვერც)\s+)?(?:ორი|სამი|ოთხი)", after):
                 continue
             add("negation_split", "warn", f"„{m.group(0)}“ → „{m.group(1)}ერთი“ (ერთად წერა)", m)
+
+    if on("wrong_form") or on("dated_form"):
+        # A quotation may keep an old form on purpose.
+        quoted = [q.span() for q in QUOTED.finditer(body)]
+
+        def forms(check: str, severity: str, rx: re.Pattern, table: dict[str, str], label: str) -> None:
+            for m in rx.finditer(body):
+                if any(in_tag[m.start():m.end()]) or any(a <= m.start() < b for a, b in quoted):
+                    continue
+                add(check, severity, f"{label}: „{m.group(0)}“ → „{table[' '.join(m.group(0).split())]}“", m)
+
+        if on("wrong_form"):
+            forms("wrong_form", "error", WRONG_FORMS_RE, WRONG_FORMS, "არასწორი ფორმა")
+        if on("dated_form"):
+            forms("dated_form", "warn", DATED_FORMS_RE, DATED_FORMS, "უმჯობესი ფორმა")
 
     if title is not None and on("title_period") and re.search(r"[.!]\s*$", title.strip()):
         t = title.strip()

@@ -16,8 +16,9 @@ In Georgian, days of the month are expressed by **cardinal numbers** (რაო�
 
 - **Only the 1st is an ordinal**:
   - ✅ `1 ნოემბერი` (spoken: `პირველი ნოემბერი`)
-  - ✅ `1-ელი ნოემბერი` (spoken: `პირველი ნოემბერი`)
-  - ✅ `1-ელ ნოემბერს` (spoken: `პირველ ნოემბერს`)
+  - ✅ `1-ლი ნოემბერი` (spoken: `პირველი ნოემბერი`)
+  - ✅ `1-ლ ნოემბერს` (spoken: `პირველ ნოემბერს`)
+  - ❌ `1-ელი ნოემბერი` (flagged by linter; the first is written `1-ლი`)
 - **All other days (2 to 31) are cardinals**:
   - ✅ `22 ნოემბერი` (spoken: `ოცდაორი ნოემბერი`)
   - ❌ `22-ე ნოემბერი` (flagged by linter)
@@ -173,11 +174,11 @@ Ordinals (`მე-...-ე`) are correct whenever expressing sequence, rank, chap
   - `მე-2 სართული` (`მეორე სართული`)
   - `მე-5 სართულზე` (`მეხუთე სართულზე`)
 - **Places and rankings**:
-  - `1-ელი ადგილი` / `პირველი ადგილი`
+  - `1-ლი ადგილი` / `პირველი ადგილი`
   - `მე-2 ადგილი` (`მეორე ადგილი`)
   - `მე-3 ადგილი` (`მესამე ადგილი`)
 - **School grades**:
-  - `1-ელი კლასი` (`პირველი კლასი`)
+  - `1-ლი კლასი` (`პირველი კლასი`)
   - `მე-7 კლასი` (`მეშვიდე კლასი`)
   - `მე-11 კლასი` (`მეთერთმეტე კლასი`)
 - **Editions, sessions, and conferences**:
@@ -193,32 +194,40 @@ In Georgian grammar (Shanidze, *Grammar of Georgian*, §151; confirmed by *matsn
 - Preceding components (hundreds, thousands, millions) remain in their bare cardinal stem form (`ას`, `ორას`, `სამას`, `ათას`, `ორი ათას`).
 - If the final unit is 1 in a compound, it becomes **`მეერთე`** (never `პირველი`): `21-ე` is `ოცდამეერთე`, `101-ე` is `ას მეერთე`, `1001-ე` is `ათას მეერთე`.
 - Tens and twenties: 80 is `ოთხმოცი`, its ordinal is `მეოთხმოცე`. Therefore, `180-ე` is **`ას მეოთხმოცე`** (never `ას ოთხმოცი` or `ას ოთხმოცე`).
+- **Ordinals in digits** (Peikrishvili §59): if the spoken word starts with `მე-`, write `მე-` and then the digits:
+  `მე-5`, `მე-40`, `მე-100`, `მე-1000`. Otherwise write the digits and then `-ე`: `21-ე`, `30-ე`, `101-ე`, `180-ე`.
+  The first is `1-ლი`, and its case forms keep the hyphen: `1-ლ ნოემბერს`, `1-ლში`. `ka_lint` flags `1-ელი` and
+  `100-ე` (Louie confirmed `1-ლი`, 2026-11-07).
+- **Spacing**: Peikrishvili writes a compound ordinal as one word (`ასმეერთე`). Kaeasy keeps it spaced, like the
+  cardinals and *matsne.gov.ge*: `ას მეერთე`, `ორი ათას ოცდამეექვსე` (decided by Louie, 2026-11-07).
+- **The multiplier of ათასი stays nominative** in every case (Peikrishvili §59): `ორი ათასი კაცი`,
+  `ორი ათას კაცს`, `სამი ათასმა კაცმა`. ❌ `ორ ათას კაცს` (flagged by `ka_lint`; Louie confirmed, 2026-11-07).
 
 ### Reference Table: Ordinals from 100 to 2000+
 
 | Digits | Ordinal Spoken Form | Note / Source |
 |---|---|---|
-| `100-ე` | `მეასე` | Even hundred takes `მე-...-ე` |
+| `მე-100` | `მეასე` | The word starts with `მე-`, so the digits follow `მე-` |
 | `101-ე` | `ას მეერთე` | Compound 1 becomes `მეერთე` |
 | `102-ე` | `ას მეორე` | Preceding hundred is stem `ას` |
 | `110-ე` | `ას მეათე` | `ათი` → `მეათე` |
 | `120-ე` | `ას მეოცე` | `ოცი` → `მეოცე` |
 | `150-ე` | `ას ორმოცდამეათე` | `ორმოცდაათი` → `ორმოცდამეათე` |
 | `180-ე` | `ას მეოთხმოცე` | Confirmed by matsne.gov.ge: `180-ე (ას მეოთხმოცე)` |
-| `200-ე` | `მეორასე` | `ორასი` → `მეორასე` |
+| `მე-200` | `მეორასე` | `ორასი` → `მეორასე` |
 | `201-ე` | `ორას მეერთე` | Preceding hundred is stem `ორას` |
-| `300-ე` | `მესამასე` | `სამასი` → `მესამასე` |
+| `მე-300` | `მესამასე` | `სამასი` → `მესამასე` |
 | `353-ე` | `სამას ორმოცდამეცამეტე` | `300` (`სამას`) + `53` (`ორმოცდამეცამეტე`) |
-| `400-ე` | `მეოთხასე` | `ოთხასი` → `მეოთხასე` |
-| `500-ე` | `მეხუთასე` | `ხუთასი` → `მეხუთასე` |
-| `600-ე` | `მეექვსასე` | `ექვსასი` → `მეექვსასე` |
-| `700-ე` | `მეშვიდასე` | `შვიდასი` → `მეშვიდასე` |
-| `800-ე` | `მერვაასე` | `რვაასი` → `მერვაასე` |
-| `900-ე` | `მეცხრაასე` | `ცხრაასი` → `მეცხრაასე` |
-| `1000-ე` | `მეათასე` | `ათასი` → `მეათასე` |
+| `მე-400` | `მეოთხასე` | `ოთხასი` → `მეოთხასე` |
+| `მე-500` | `მეხუთასე` | `ხუთასი` → `მეხუთასე` |
+| `მე-600` | `მეექვსასე` | `ექვსასი` → `მეექვსასე` |
+| `მე-700` | `მეშვიდასე` | `შვიდასი` → `მეშვიდასე` |
+| `მე-800` | `მერვაასე` | `რვაასი` → `მერვაასე` |
+| `მე-900` | `მეცხრაასე` | `ცხრაასი` → `მეცხრაასე` |
+| `მე-1000` | `მეათასე` | `ათასი` → `მეათასე` |
 | `1001-ე` | `ათას მეერთე` | `1000` (`ათას`) + `1` (`მეერთე`) |
 | `1180-ე` | `ათას ას მეოთხმოცე` | Stem + stem + ordinal |
-| `2000-ე` | `მეორიათასე` | Even two thousand: `მეორიათასე` |
+| `მე-2000` | `მეორიათასე` | Even two thousand: `მეორიათასე` |
 | `2026-ე` | `ორი ათას ოცდამეექვსე` | `2000` (`ორი ათას`) + `26` (`ოცდამეექვსე`) |
 
 ### Declension Before Nouns
@@ -289,6 +298,9 @@ Georgian numbers from 20 to 99 are counted in twenties:
   - `2,5` → `ორნახევარი`
   - `3,5` → `სამნახევარი`
   - `10,5` → `ათნახევარი`
+- A number and `ნახევარი` are one word (`ოთხნახევარი`), though Peikrishvili hyphenates them (`ოთხ-ნახევარი`).
+  A unit word takes a hyphen: `კილო-ნახევარი`, `ტონა-ნახევარი`, `საათ-ნახევარი` (Peikrishvili §56; decided by
+  Louie, 2026-11-07).
 - Higher decimals use `მთელი`:
   - `25,4` → `ოცდახუთი მთელი ოთხი მეათედი`
   - `12,75` → `თორმეტი მთელი სამოცდათხუთმეტი მეასედი`

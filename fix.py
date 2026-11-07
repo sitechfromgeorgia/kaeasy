@@ -49,7 +49,7 @@ def fix_text(text: str) -> tuple[str, list[str]]:
     # Dashes are banned in Georgian copy (Edo's rule, 2026-09-25): ranges get a hyphen, asides a spaced hyphen.
     sub(r"(?<=\d)[–—](?=\d)", "-", "dash")
     sub(r"\s*[–—]\s*", " - ", "dash")
-    # Ordinal day of month: 22-ე ნოემბრის, მე-22 ნოემბერს → 22 ნოემბერს. Day 1 stays 1-ელი.
+    # Ordinal day of month: 22-ე ნოემბრის, მე-22 ნოემბერს → 22 ნოემბერს. Day 1 stays 1-ლი.
     sub(rf"(?<![\w-])(?:მე-)?({MONTH_DAY})-ე\s+({MONTH_FORM})(?![ა-ჰ])", r"\1 \2", "ordinal_date")
     sub(rf"(?<![\w-])მე-({MONTH_DAY})\s+({MONTH_FORM})(?![ა-ჰ])", r"\1 \2", "ordinal_date")
     # Forms ვერცერთი and არცერთი inherently contain negation; remove redundant არ or ვერ before the verb.

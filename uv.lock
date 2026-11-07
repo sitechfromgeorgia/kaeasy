@@ -22,7 +22,7 @@ wheels = [
 
 [[package]]
 name = "kaeasy"
-version = "0.5.3"
+version = "0.6.0"
 source = { virtual = "." }
 
 [package.dev-dependencies]

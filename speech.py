@@ -205,6 +205,7 @@ def version(text):
 GROUPED = r"\d{1,3}(?:[   ]\d{3})+(?!\d)"
 NUM = rf"{GROUPED}|\d{{1,3}}(?:,\d{{3}})+|\d+(?:[.,]\d+)?"
 TOKEN = re.compile(r"^(?P<pre>[„“\"(]*)(?P<core>.*?)(?P<post>[.,;:!?“\")]*)$")
+ORD_CASE = "ის|ს|მა|ით|ად|მდე|ამდე|დან|იდან|ზე|ში|თან"  # case endings after an ordinal in digits
 # Whitespace tokens, except that a number grouped with spaces ("2 250-ზე", "151 000") stays one token, so the
 # voice reads one number and the caption shows it as one word.
 TOKENS = re.compile(rf"(?<!\S)[„“\"(]*{GROUPED}\S*|\S+")
@@ -421,13 +422,17 @@ def speak_token(core, next_word="", prev_word="", known=None):
         if suf:
             return f"{ordinal(n_val)} {attach(p_name, suf)}"
         return f"{cardinal(n_val)} {p_name}"
-    m = re.fullmatch(r"(?P<n>\d+)-(?P<o>ე|ელი|ლი|ელ|ლ)", core)  # 21-ე, 1-ელი, 1-ელ იანვარს
+    m = re.fullmatch(r"(?P<n>\d+)-(?P<o>ე|ელი|ლი|ელ|ლ)", core)  # 21-ე, 1-ლი, 1-ლ იანვარს (old 1-ელი too)
     if m:
         n_val = int(m["n"])
         after = TOKEN.match(next_word or "")["core"]
         if MONTHS.match(after):
             return month_day(n_val, next_word)
         return ordinal(n_val) if m["o"] in ("ე", "ელი", "ლი") else _drop_i(ordinal(n_val))
+    # An ordinal with a case ending: 1-ლში, 21-ეზე, მე-5-ში, მე-5-ის.
+    m = re.fullmatch(rf"(?:(?P<n>\d+)-(?:ე|ელ|ლ)|მე-(?P<m>\d+)-)(?P<suf>{ORD_CASE})", core)
+    if m:
+        return inflect(ordinal(int(m["n"] or m["m"])), m["suf"])
     m = re.fullmatch(r"მე-(?P<n>\d+)(?:-ე)?", core)  # მე-2
     if m:
         n_val = int(m["n"])

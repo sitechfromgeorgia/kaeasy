@@ -149,3 +149,26 @@ Because Class 3 verbs look intransitive, translation models erroneously leave th
 | 38 | მუშაობს | იმუშავებს | იმუშავა | უმუშავია | Class 3 | I: Nom / II: Erg / III: Dat |
 | 39 | თანამშრომლობს | ითანამშრომლებს | ითანამშრომლა | უთანამშრომლია | Class 3 | I: Nom / II: Erg / III: Dat |
 | 40 | სჭირდება | დასჭირდება | დასჭირდა | დასჭირვებია | Class 4 | I, II, III: Dat |
+
+---
+
+## 6. Book rules: screeves, voice and case
+
+### Series III has three screeves
+- Series III contains three screeves: the first evidential (perfect), the second evidential (pluperfect) and the third subjunctive. The table above lists only the first two. A footnote reports that specialist literature also separates a fourth group of forms (a IV series); the book's own count stays at three. (Peikrishvili §104, §107)
+- The third subjunctive is subjunctive in mood and refers to past or future time. The book says it is rare today compared with other screeves and that the second evidential has partly taken over its function; a footnote reports შ. კეკელია's proposal to remove it from the conjugation system. The book reports that scholars have repeatedly shown it is not dying out: it is an independent screeve, needed especially for the future-time subjunctive. The book's two examples are wishes, but it does not limit the screeve to wishes or blessings. ✅ `დამეწეროს`, `გაგეზარდოს`. (Peikrishvili §107)
+
+### Case of the subject in special verbs
+- Some verbs have a case-changing subject and an indirect object but no direct object, so the aorist subject is ergative: ✅ `უხელმძღვანელა მან მას`, `უდარაჯა მან მას`. A missing direct object therefore does not by itself show a nominative subject. Scholars classify these two ways: Shanidze and Kvachadze call them intransitive, Chikobava, Topuria and Sukhishvili call them transitive, or more exactly "defective"; the book's own conclusion is that it is better to count them as transitive, active verbs. (Peikrishvili §114, §129)
+- Shanidze's exception: he holds that inversion rests on transitivity and series III, so an intransitive verb cannot be inverted, except the preverbed forms of აქვს and ჰყავს (მიაქვს, მიჰყავს), because the real subject is the same in all three series. The book's examples show that subject in the dative in the present and the perfect, and in the ergative in the aorist: `მიაქვს ცხენს ტვირთი` (present), `წაიღო ცხენმა ტვირთი` (aorist), `წაუღია ცხენს ტვირთი` (perfect); likewise `დედას მიჰყავს`, `დედამ წაიყვანა`, `დედას წაუყვანია`. (Peikrishvili §83)
+
+### Telling the classes apart
+- Quick form test for intransitive verbs: put the verb in the form that answers რას შვრება? If it ends in -ა it is passive, if it ends in -ს it is medial. Passive: შენდება, იხატება, ინგრევა, თბება. Medial: წუხს, დუღს, ცხოვრობს. The test is given for intransitive verbs only, so it does not sort a transitive verb in -ს. (Peikrishvili §119)
+- Series II test for medial verbs: put the verb in series II and look at the subject. If it goes into the ergative, the verb is medioactive; if it stays nominative, it is mediopassive. Medioactive: ცხოვრობს ის → იცხოვრა მან, იმეფებს, იმეფა. Mediopassive: დგას ის → იდგა ის. (Peikrishvili §126)
+- One-person medioactive verbs always have the prefix ი- in the future series and series II. Verbs in -იალ- and verbs of sound and the like are mostly medioactive: ტრიალებს, ჭიკჭიკებს. (Peikrishvili §126)
+- Limits: some medial verbs have only present-series forms, so they have no series II form to test (ჩანს: ჩანდა, ჩანდეს), and literary Georgian often shows parallel forms such as იდუღა მან // ადუღდა ის. (Peikrishvili §126, §127)
+- Medioactive verbs that express the subject's feeling or state keep the plain personal form; an auxiliary is wrong: ✅ `ვყვირი`, `ვტირი`, `ვმღერი`, `ვტყუი`, not `ვყვირივარ`, `ვტირივარ`. Mediopassive verbs do take the auxiliary in the 1st and 2nd person present (ვდგავარ, დგახარ). (Peikrishvili §131, point 6; §126)
+
+### Active and passive pairs
+- Active to passive: the active direct object becomes the passive subject, the active subject is lost, and the indirect object carries over unchanged. Passive to active: the passive subject becomes the direct object, a new subject appears, and the indirect object again carries over unchanged. In Georgian an active always has one person more than its passive. Example: უზრდის ის მას მას → ეზრდება ის მას; ეწერება ის მას → უწერს ის მას მას. (Peikrishvili §118)
+- In some cases the partner of an active is a medial verb rather than a passive: ადუღებს ის მას → დუღს ის. Two verbs are not a conversion pair if the same thing is the subject of both, even when their person counts differ. (Peikrishvili §118)
